@@ -1,0 +1,1056 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    font-family: TeXGyreAdventor , '宋体';
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+.Index-Wrap{
+    width: 100%;
+    height:8000px;
+    /*background-color: pink;*/
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    /*opacity: 0;*/
+}
+.Index-Advertising{
+    width: 100%;
+    height: 70px;
+    background-color: palegreen;
+    background-image: url("../img/guanggao.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 70px;
+}
+
+.home-wrap-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.home-header {
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+}
+
+.home-nav {
+    width: 80%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*background-color: cyan;*/
+}
+
+.home-nav-left {
+    width: 920px;
+    height: 40px;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /*background-color: cyan;*/
+}
+
+.home-nav-left > ul {
+
+}
+
+.home-nav-left > ul > li {
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 7px 0 0;
+}
+
+.home-nav-left > ul > li > a {
+    color: rgb(176, 176, 176);
+}
+
+.home-nav-left > ul > li:nth-child(even) {
+    color: rgb(66, 60, 55);
+}
+
+.home-nav-left > ul > li > a:hover {
+    color: white;
+}
+
+.home-nav-right {
+    width: 313px;
+    height: 40px;
+    font-size: 12px;
+    position: absolute;
+    left: 915px;
+    bottom: 0;
+    /*background-color: hotpink;*/
+
+}
+
+.home-nav-right > ul {
+    padding: 0 0 0 25px;
+    position: absolute;
+    left: 0;
+    /*background-color: hotpink;*/
+
+}
+
+.home-nav-right > ul > li {
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 7px 0 0;
+    color: rgb(66, 60, 55);
+}
+
+.home-nav-right > ul > li:last-child {
+    width: 125px;
+    margin-left: 22px;
+    background-color: rgb(66, 66, 66);
+    height: 40px;
+    position: absolute;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.home-nav-right > ul > li > a {
+    color: rgb(176, 176, 176);
+}
+
+.home-nav-right > ul > li:last-child:hover {
+    background-color: #FFFFFF;
+}
+
+.home-nav-right > ul > li > a:hover {
+    color: red;
+}
+
+/*中间导航*/
+.home-section-wrap {
+    width: 100%;
+    height: 100px;
+    /*background-color: hotpink;*/
+    position: relative;
+}
+
+.home-section-box {
+    width: 1220px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 16px;
+}
+
+.home-section-box > ul {
+    height: 100px;
+    line-height: 100px;
+}
+
+
+.home-section-box > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+
+
+}
+
+.home-section-box > ul > li > a {
+    color: #333333;
+    background-color: palegreen;
+    display: block;
+    margin-top: -10px;
+    line-height: 50px;
+}
+.home-section-box > ul > li:nth-child(1)>a{
+    background-color: black;
+}
+.home-section-box > ul > li > a>img{
+    margin-top: 20px;
+}
+
+.home-section-box > ul > li > a:hover {
+    color: red;
+}
+
+.home-section-box > ul > li:first-child > a > img {
+    margin-right: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.home-section-search {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.home-section-search > input {
+    width: 250px;
+    height: 50px;
+    margin-top: 25px;
+    outline: none;
+    background: none;
+    border: none;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.home-section-search-button {
+    width: 50px;
+    height: 50.5px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.home-section-search-button > span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*=轮播图=*/
+.Home-ImgContains-wrap {
+    width: 1220px;
+    height: 450px;
+    position: absolute;
+    background-color: darkblue;
+    top: 100px;
+    margin: auto;
+    overflow: hidden;
+    opacity: 0;
+
+}
+
+.Home-Img-box {
+    width: 1220px;
+    position: absolute;
+    /*background-color: darkblue;*/
+    margin: auto;
+
+}
+
+.Home-Img-box > ul {
+    width: 8000px;
+    height: 450px;
+    position: absolute;
+    left: -0px;
+}
+
+.Home-Img-box > ul > li {
+    display: inline-block;
+}
+
+.Home-Img-box > ul > li > a > img {
+    width: 1220px;
+    height: 450px;
+}
+
+.Home-ImgContains-point {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+
+}
+
+.Home-ImgContains-point > li {
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.Home-options {
+    position: absolute;
+    width: 220px;
+    height: 450px;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.Home-options li:first-child {
+    margin-top: 18px;
+}
+
+.Home-options li {
+    display: block;
+    line-height: 39px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 1px;
+    padding: 0 0 0 15px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.Home-options li:hover {
+    border: 1px solid rgb(255, 104, 0);
+    background-color: rgb(255, 104, 0);
+}
+
+.Home-options li::before {
+    content: ">";
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+}
+
+.Home-options > li > a {
+    color: #FFFFFF;
+}
+
+.lt, .gt {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.lt:hover, .gt:hover {
+    background-color: rgba(255, 104, 0, 0.5);
+}
+
+.lt {
+    left: 220px;
+    top: 180px;
+}
+
+.gt {
+    top: 180px;
+    left: 1170px;
+}
+
+.lt::before {
+    content: "<";
+    position: absolute;
+    color: rgb(190, 201, 212);
+    font-size: 50px;
+    left: 5px;
+}
+
+.gt::before {
+    content: ">";
+    position: absolute;
+    color: rgb(190, 201, 212);
+    font-size: 50px;
+    left: 10px;
+}
+
+
+/*热门商品开始*/
+.HotCommodity-wrap {
+    width: 1220px;
+    position: absolute;
+    top: 565px;
+    margin: auto;
+    /*background-color: palegreen;*/
+}
+
+.HotCommodity-wrap div {
+    width: 320px;
+    height: 170px;
+    float: left;
+    margin-left: 13.3px;
+}
+
+.HotCommodity-wrap div:first-child {
+    width: 220px;
+    margin-left: 0;
+}
+
+.HotCommodity-wrap div:last-child {
+    float: right;
+}
+
+.HotCommodity-wrap div:first-child > a {
+    display: inline-block;
+    width: 74px;
+    height: 86px;
+    background-color: rgb(95, 87, 80);
+}
+
+.HotCommodity-wrap div:first-child > a {
+    border: 1px solid rgb(102, 94, 87);
+    margin: -1px 0 0 -1px;
+    text-align: center;
+    line-height: 86px;
+}
+
+.HotCommodity-wrap div:first-child > a > span {
+    font-size: 25px;
+    color: rgb(207, 204, 202);
+}
+
+.HotCommodity-wrap div:first-child > a > p {
+    font-size: 12px;
+    width: 100%;
+    height: 0;
+    margin: -65px 0 0 0;
+    text-align: center;
+    background-color: #333333;
+    color: rgb(207, 204, 202);
+}
+
+.HotCommodity-wrap > div > a > img {
+    width: 320px;
+    height: 170px;
+}
+
+.HotCommodity-wrap div:first-child > a:hover > span, .HotCommodity-wrap div:first-child > a:hover > p {
+    color: #FFFFFF;
+}
+
+/*热门商品结束*/
+
+/*秒杀开始*/
+.SecondSkillCommodity-wrap {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    top: 750px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.SecondSkillCommodity-box {
+    width: 1220px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*background-color: pink;*/
+}
+
+.SecondSkillCommodity-title {
+    width: 100%;
+    height: 58px;
+    /*background-color: greenyellow;*/
+    line-height: 58px;
+}
+
+.SecondSkillCommodity-title {
+    width: 100%;
+    font-family: TeXGyreAdventor sans-serif;
+    font-size: 22px;
+
+}
+
+.SecondSkillCommodity-title > h2 {
+    float: left;
+    color: rgb(51, 51, 51);
+}
+
+.SecondSkillCommodity-title > span {
+    display: inline-block;
+    float: right;
+    width: 40px;
+    border: 1px solid rgb(224, 224, 224);
+    text-align: center;
+    line-height: 30px;
+    margin: 13px 0 0 -1px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(224, 224, 224);
+}
+
+.SecondSkillCommodity-title > span:hover {
+    color: red;
+}
+
+.SecondSkillCommodity-content {
+    width: 100%;
+    height: 340px;
+    position: relative;
+}
+
+.SecondSkillCommodity-content > div:first-child {
+    width: 220px;
+    height: 340px;
+    background-color: rgb(241, 237, 237);
+    border-top: 1px solid rgb(229, 57, 53);
+}
+
+.SecondSkillCommodity-content > div:first-child > div {
+    /*background-color: coral;*/
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.SecondSkillCommodity-content > div:first-child > div > ul:nth-child(1) {
+    /*background-color: violet;*/
+    width: 220px;
+    height: 70%;
+}
+
+.SecondSkillCommodity-content > div:first-child > div > ul:first-child > li:nth-child(2) {
+    width: 220px;
+    font-size: 21px;
+    color: red;
+    /*background-color: cyan;*/
+    height: 80px;
+    line-height: 120px;
+}
+
+.SecondSkillCommodity-content > div:first-child > div > ul:first-child > li:nth-child(3) > span {
+    width: 220px;
+    font-size: 60px;
+    color: red;
+}
+
+.SecondSkillCommodity-content > div:first-child > div > ul:first-child > li:nth-child(4) {
+    font-size: 15px;
+    color: rgba(0, 0, 0, .54)
+}
+
+.SecondSkillCommodity-content > div:first-child > div > ul:nth-child(2) {
+    margin-top: 10px;
+}
+
+.SecondSkillCommodity-content > div:first-child > div > ul:nth-child(2) > li {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.SecondSkillCommodity-content > div:first-child > div > ul:nth-child(2) > li:nth-child(odd) {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(96, 87, 81);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.SecondSkillCommodity-content > div:first-child > div > ul:nth-child(2) > li:nth-child(even) {
+
+}
+
+.SecondSkillCommodity-content > div:first-child > div > ul:first-child > li:nth-child(2) {
+    color: red;
+}
+
+.SecondSkillCommodity-content > div:first-child > div > ul:first-child > span {
+    opacity: 0;
+}
+
+.SecondSkillCommodity-content > div:first-child > div > ul:first-child > li {
+    margin-bottom: 10px;
+}
+
+.SecondSkillCommodity-content > div:first-child > div > ul:last-child {
+    /*background-color: maroon;*/
+    width: 100%;
+}
+
+.SecondSkillCommodity-content > div:last-child {
+    /*background-color: coral;*/
+    width: 990px;
+    height: 340px;
+    position: absolute;
+    top: 0;
+    left: 230px;
+    overflow: hidden;
+}
+
+.SecondSkillCommodity-content > div:last-child > ul {
+    width: 3000px;
+    height: 340px;
+    position: absolute;
+    left: 0;
+}
+
+.SecondSkillCommodity-content-ul > li {
+    display: inline-block;
+    width: 240px;
+    height: 340px;
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s;
+}
+
+.SecondSkillCommodity-content-ul > li:hover {
+    box-shadow: 0 0 12px #cccccc;
+    transform: translateY(-3px);
+
+    /*animation: SecondSkillFromTransform 500ms ease-in;*/
+}
+
+/*@keyframes SecondSkillFromTransform {*/
+/*    10% {*/
+/*        transform: translateY(-1px);*/
+/*    }*/
+/*    25% {*/
+/*        transform: translateY(-2px);*/
+/*    }*/
+/*    50% {*/
+/*        transform: translateY(-3px);*/
+/*    }*/
+/*}*/
+
+.SecondSkillCommodity-content-ul > li > div:first-child {
+    width: 240px;
+    height: 367px;
+    background-color: rgb(255, 255, 255);
+}
+
+.SecondSkillCommodity-content-ul > li > div:first-child > span:first-child {
+    display: block;
+    width: 1px;
+    height: 1px;
+    font-size: 100px;
+    color: #cccccc;
+    background-color: palegreen;
+    margin-top: -28px;
+    margin-right: 100px;
+    margin-bottom: 120px;
+}
+
+.SecondSkillCommodity-content-ul > li > div:first-child > span:last-child {
+    display: block;
+    width: 1px;
+    height: 1px;
+    font-size: 130px;
+    color: #cccccc;
+    /*background-color: palegreen;*/
+    margin-left: 55px;
+}
+
+.SecondSkillCommodity-content-ul > li > div:last-child {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    width: 240px;
+    height: 340px;
+}
+
+.SecondSkillCommodity-content-ul > li > div:last-child > a {
+    display: block;
+    text-align: center;
+    /*background-color: cyan;*/
+    height: 340px;
+
+}
+
+.SecondSkillCommodity-content-ul > li > div:last-child > a > img {
+    width: 180px;
+    height: 180px;
+    margin: 30px 0 20px 0;
+}
+
+.SecondSkillCommodity-content-ul > li > div:last-child > a > p {
+    display: block;
+    font-size: 14px;
+    color: rgb(96, 87, 81);
+}
+
+.SecondSkillCommodity-content-ul > li > div:last-child > a > p:last-child {
+    color: red;
+}
+
+.SecondSkillCommodity-content-ul > li > div:last-child > a > p > span {
+    text-decoration: line-through;
+    color: rgb(96, 87, 81);
+}
+
+.SecondSkillCommodity-content-ul > li:first-child {
+    margin-left: 0;
+}
+
+.SecondSkillCommodity-content-ul > li:nth-child(2n-3) {
+    border-top: 1px solid rgb(255, 172, 19);
+}
+
+.SecondSkillCommodity-content-ul > li:nth-child(2n-2) {
+    border-top: 1px solid rgb(131, 196, 78);
+}
+
+.SecondSkillCommodity-content-ul > li:nth-child(2n-1) {
+    border-top: 1px solid rgb(33, 150, 243);
+}
+
+.SecondSkillCommodity-content-date span {
+    font-size: 20px;
+    color: red;
+}
+
+/*秒杀结束*/
+
+/*选项卡开始*/
+.OptionsCard-Wrap {
+    width: 100%;
+    height: 5000px;
+    position: relative;
+    top: 1060px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgb(245, 245, 245);
+}
+
+.OptionsCard-Wrap-box{
+    width: 1220px;
+    height: 5000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.OptionsCard-Box {
+    width: 1220px;
+    height: 800px;
+    /*background-color: cyan;*/
+    margin-top: 30px;
+    z-index: 0;
+}
+
+.OptionsCard-Box > div:first-child {
+    width: 100%;
+    /*background-color: palegreen;*/
+}
+
+.OptionsCard-Box > div:first-child > a > img {
+    width: 100%;
+    height: 120px;
+}
+
+.OptionsCard-Box > div:nth-child(2) {
+    width: 100%;
+    height: 58px;
+    /*background-color: cyan;*/
+    position: relative;
+    margin-top: 20px;
+}
+
+.OptionsCard-Box > div:nth-child(2) > div {
+    width: 100px;
+    height: 100%;
+    /*background-color: palegreen;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    color: #333333;
+    line-height: 58px;
+}
+
+.OptionsCard-Box > div:nth-child(2) > ul {
+    width: 160px;
+    height: 100%;
+    /*background-color: violet;*/
+    position: absolute;
+    top: 0;
+    left: 1060px;
+}
+
+.OptionsCard-Box > div:nth-child(2) > ul > li {
+    list-style: none;
+    width: 50px;
+    height: 28px;
+    /*background-color: coral;*/
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 17px;
+}
+
+/*.OptionsCard-Box > div:nth-child(2) > ul > li:hover {*/
+/*    border-bottom: 3px solid rgb(254, 103, 0);*/
+/*    color: red;*/
+/*}*/
+
+
+.OptionsCard-Contents-Box {
+    position: relative;
+    width: 1220px;
+    height: 612px;
+    /*background-color: palegreen;*/
+    margin-top: 0;
+}
+
+.OptionsCard-Contents {
+    width: 100%;
+    height: 612px;
+    position: absolute;
+    /*perspective: 1000px;*/
+    transform-style: preserve-3d;
+    opacity: 0;
+    /*background-color: blueviolet;*/
+}
+
+.OptionsCard-Contents-Box > .OptionsCard-Contents > ul {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 12px 0;
+}
+
+.OptionsCard-Contents > ul > li {
+    display: inline-block;
+    /*background-color: bisque;*/
+    height: 300px;
+    width: 235px;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.OptionsCard-Contents > ul > li > div {
+    width: 100%;
+    height: 100%;
+    /*background-color: crimson;*/
+    position: absolute;
+}
+.OptionsCard-Contents .hover>div{
+    transform: rotateY(-180deg);
+    overflow: hidden;
+}
+
+.OptionsCard-Contents > ul > li > div > img{
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.OptionsCard-Contents > ul > li > a  {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: block;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+.OptionsCard-Contents > ul > li > a>div>p{
+    margin-bottom: 15px;
+}
+
+.OptionsCard-Contents .hover:hover {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+}
+
+.OptionsCard-Contents > ul > li:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.OptionsCard-Contents > ul:last-child > li:last-child > div {
+    width: 100%;
+    height: 145px;
+    background-color: rgb(255, 255, 255);
+}
+.OptionsCard-Contents > ul > li:last-child > div>a>div>p{
+   color:black;
+    margin-bottom: 10px;
+
+}
+
+.OptionsCard-Contents > ul > li:last-child > div > a > div {
+    float: left;
+    width: 60px;
+    height: 70px;
+    margin: 40px 0 0 20px;
+
+}
+
+.OptionsCard-Contents > ul > li:last-child > div > a > img {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    margin: 25px 20px 0 0;
+    float: right;
+}
+
+.OptionsCard-Contents > ul > li:last-child > div:last-child > a > img {
+    width: 59px;
+    height: 70px;
+    margin: 50px 40px 0 0;
+}
+
+.OptionsCard-Contents > ul:last-child > li:last-child > div:last-child {
+    margin-top: 155px;
+}
+
+.OptionsCard-Contents > ul > li > a > div {
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+.OptionsCard-Contents > ul > li > a > div > p > span {
+    color: red;
+}
+
+.OptionsCard-Contents > ul > li > a > div > img {
+    width: 180px;
+    height: 180px;
+}
+
+.OptionsCard-Contents > ul > li:first-child {
+    background-color: rgb(171, 228, 255);
+}
+
+.OptionsCard-Contents > ul:last-child > li:first-child {
+    background-color: rgb(170, 200, 254);
+}
+
+.OptionsCard-Contents > ul > li:first-child > a > img {
+    width: 235px;
+    height: 300px;
+}
+
+/*选项卡结束*/
+
+/*视频开始*/
+.VideoMode-Wrap{
+    width: 100%;
+    margin-top: 30px;
+}
+.VideoMode-Wrap>div:first-child{
+    width: 100%;
+    height: 120px;
+    background-color: palegreen;
+}
+.VideoMode-Wrap>div:first-child>img{
+    width: 100%;
+    height: 100%;
+}
+.VideoMode-Wrap>div:nth-child(2){
+   width: 100%;
+    height: 357px;
+    /*background-color: #13c2c2;*/
+    margin-top: 20px;
+}
+.VideoMode-Wrap>div:nth-child(2)>div>ul{
+    width: 100%;
+    height: 100%;
+    /*background-color: palegreen;*/
+    line-height: 58px;
+}
+.VideoMode-Wrap>div:nth-child(2)>div>ul>li{
+    display: inline-block;
+    font-size: 22px;
+}
+.VideoMode-Wrap>div:nth-child(2)>div>ul>li:first-child{
+     float: left;
+}
+.VideoMode-Wrap>div:nth-child(2)>div>ul>li:last-child{
+    float: right;
+    font-size: 16px;
+
+}
+.VideoMode-Wrap>div:nth-child(2)>div>ul>li:last-child>a{
+     color:black;
+}
+
+.VideoMode-Wrap>div:nth-child(2)>div:nth-child(1){
+    width: 100%;
+    height: 58px;
+    /*background-color: violet;*/
+}
+.VideoMode-Wrap>div:nth-child(2)>div:nth-child(2){
+    width: 100%;
+    height: 400px;
+    /*background-color: mediumblue;*/
+}
+.VideoMode-Wrap>div:nth-child(2)>div:nth-child(2)>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.VideoMode-Wrap>div:nth-child(2)>div:nth-child(2)>ul>li{
+    width: 296px;
+    height: 300px;
+    display: inline-block;
+    float: left;
+    transition: all .6s;
+    text-align: center;
+}
+.VideoMode-Wrap>div:nth-child(2)>div:nth-child(2)>ul>li:hover{
+    transform: translateY(-3px);
+    box-shadow:0 0 15px #423c37;
+}
+.VideoMode-Wrap>div:nth-child(2)>div:nth-child(2)>ul>li>p{
+    font-size: 16px;
+    color:black;
+    margin-top: 40px;
+}
+
+.VideoMode-Wrap>div:nth-child(2)>div:nth-child(2)>ul>li>div{
+    width: 100%;
+    height: 180px;
+    /*background-color: crimson;*/
+}
+.VideoMode-Wrap>div:nth-child(2)>div:nth-child(2)>ul>li>div>img{
+    width: 100%;
+    height: 100%;
+}
+
+/*.OptionsCard-Contents > ul > li > div > img*/
+/*.VideoMode-Wrap>div:nth-child(2)>div:nth-child(2){*/
+/*    width: 100%;*/
+/*    height: 300px;*/
+/*    background-color: violet;*/
+/*}*/
+
+
+
+/*视频结束*/
+
+
+

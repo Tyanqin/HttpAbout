@@ -1,7 +1,7 @@
 import {ADD,SUB,EVENTADD} from '../actionType'
 let initValue = 0
 
-export function  Counter_Reducer (state=initValue,action){
+export default function  counterReducer (state=initValue,action){
          let {data,type} =  action
          let newState = null;
         switch (type) {

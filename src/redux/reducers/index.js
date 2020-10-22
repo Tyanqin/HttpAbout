@@ -1,10 +1,9 @@
-import Counter_Reducer from './counter_reducer'
-import Home_Reducer from './home_reducer'
+import CounterReducer from './counter_reducer'
+import HomeReducer from './home_reducer'
 
-import {CombineReducers} from 'redux'
+import {combineReducers} from 'redux'
 
-export default CombineReducers({
-   counter:Counter_Reducer,
-   home:Home_Reducer
+export default combineReducers({
+  counter:CounterReducer,
+  home:HomeReducer
 })
-
