@@ -8,7 +8,7 @@ export default class HomeSectionBox extends Component{
     return(
        <Fragment>
          <ul>
-           <li><Link to="#"><img src={HomePng} alt=""/></Link></li>
+           <li><Link to="#"><img src={HomePng} alt="123"/></Link></li>
            <li><Link to="#">小米手机</Link></li>
            <li><Link to="#">Redmi 红米</Link></li>
            <li><Link to="#">电视</Link></li>

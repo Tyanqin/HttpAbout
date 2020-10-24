@@ -11,6 +11,6 @@ export  const  CombineRoutes = () => (
     <Route  path = "/login" component={LoginContainer}/>
     <Route  path = "/" component={HomeContainer}/>
   </Switch>
-  <Redirect to={HomeContainer}/>
+
 </Fragment>
 )

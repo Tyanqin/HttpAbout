@@ -44,19 +44,19 @@ export default class CarouselImg extends Component {
             <li className="1" id="2"/>
             <li className="1" id="3"/>
           </ul>
-          <div className="lt"/>
-          <div className="gt"/>
+          <div className="lt"><span className="iconfont">&#xe61c;</span></div>
+          <div className="gt"><span className="iconfont">&#xe7a7;</span></div>
           <ul className="Home-options">
-            <li><Link to="#">手机 电话卡</Link></li>
-            <li><Link to="#">电视 盒子</Link></li>
-            <li><Link to="#">笔记本 显示器</Link></li>
-            <li><Link to="#">家电 插线板</Link></li>
-            <li><Link to="#">出行 穿戴</Link></li>
-            <li><Link to="#">智能 路由器</Link></li>
-            <li><Link to="#">电源 配件</Link></li>
-            <li><Link to="#">健康 儿童</Link></li>
-            <li><Link to="#">耳机 音响</Link></li>
-            <li><Link to="#">生活 箱包</Link></li>
+            <li><Link to="#">手机 电话卡</Link><span className="iconfont">&#xe7a7;</span></li>
+            <li><Link to="#">电视 盒子</Link><span className="iconfont">&#xe7a7;</span></li>
+            <li><Link to="#">笔记本 显示器</Link><span className="iconfont">&#xe7a7;</span></li>
+            <li><Link to="#">家电 插线板</Link><span className="iconfont">&#xe7a7;</span></li>
+            <li><Link to="#">出行 穿戴</Link><span className="iconfont">&#xe7a7;</span></li>
+            <li><Link to="#">智能 路由器</Link><span className="iconfont">&#xe7a7;</span></li>
+            <li><Link to="#">电源 配件</Link><span className="iconfont">&#xe7a7;</span></li>
+            <li><Link to="#">健康 儿童</Link><span className="iconfont">&#xe7a7;</span></li>
+            <li><Link to="#">耳机 音响</Link><span className="iconfont">&#xe7a7;</span></li>
+            <li><Link to="#">生活 箱包</Link><span className="iconfont">&#xe7a7;</span></li>
           </ul>
         </div>
       </Fragment>

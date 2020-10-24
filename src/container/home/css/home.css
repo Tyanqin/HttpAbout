@@ -25,11 +25,12 @@ html, body {
 }
 .Index-Advertising{
     width: 100%;
-    height: 70px;
+    height: 120px;
     background-color: palegreen;
     background-image: url("../img/guanggao.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 70px;
+    background-size: 160% 120px;
+    background-position: center;
 }
 
 .home-wrap-box {
@@ -164,23 +165,29 @@ html, body {
 .home-section-box > ul > li {
     display: inline-block;
     margin-right: 20px;
-
-
 }
 
 .home-section-box > ul > li > a {
     color: #333333;
-    background-color: palegreen;
     display: block;
     margin-top: -10px;
     line-height: 50px;
 }
+
 .home-section-box > ul > li:nth-child(1)>a{
-    background-color: black;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 90px;
+    position: relative;
 }
-.home-section-box > ul > li > a>img{
-    margin-top: 20px;
+
+.home-section-box > ul > li:nth-child(1)>a>img{
+    position: absolute;
+    top:-20px;
+    left: 0;
+
 }
+
 
 .home-section-box > ul > li > a:hover {
     color: red;
@@ -313,11 +320,10 @@ html, body {
     background-color: rgb(255, 104, 0);
 }
 
-.Home-options li::before {
-    content: ">";
+.Home-options li>span {
     position: absolute;
     right: 10px;
-    font-size: 20px;
+    font-size:20px;
 }
 
 .Home-options > li > a {
@@ -329,6 +335,7 @@ html, body {
     width: 50px;
     height: 80px;
     cursor: pointer;
+    line-height: 80px;
 }
 
 .lt:hover, .gt:hover {
@@ -345,20 +352,18 @@ html, body {
     left: 1170px;
 }
 
-.lt::before {
-    content: "<";
+.lt>span {
     position: absolute;
     color: rgb(190, 201, 212);
-    font-size: 50px;
+    font-size: 40px;
     left: 5px;
 }
 
-.gt::before {
-    content: ">";
+.gt>span {
     position: absolute;
     color: rgb(190, 201, 212);
-    font-size: 50px;
-    left: 10px;
+    font-size: 40px;
+    left: 0;
 }
 
 
@@ -375,11 +380,16 @@ html, body {
     width: 320px;
     height: 170px;
     float: left;
-    margin-left: 13.3px;
+    margin-left: 11px;
 }
 
+/*.HotCommodity-wrap div:first-child {*/
+/*    width: 220px;*/
+/*    margin-left: 0;*/
+/*}*/
+
 .HotCommodity-wrap div:first-child {
-    width: 220px;
+    width:225px;
     margin-left: 0;
 }
 
@@ -389,14 +399,14 @@ html, body {
 
 .HotCommodity-wrap div:first-child > a {
     display: inline-block;
-    width: 74px;
+    width: 72px;
     height: 86px;
     background-color: rgb(95, 87, 80);
 }
 
 .HotCommodity-wrap div:first-child > a {
     border: 1px solid rgb(102, 94, 87);
-    margin: -1px 0 0 -1px;
+    margin: -1px 0 0 -0.5px;
     text-align: center;
     line-height: 86px;
 }
