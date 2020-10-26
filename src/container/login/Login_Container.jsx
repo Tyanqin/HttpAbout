@@ -8,19 +8,46 @@ import WEIBO from './img/weibo.jpg'
 import WEIXIN from './img/weixin.jpg'
 import ZHIFU from './img/zhifu.jpg'
 import ERWEIMA from './img/erweima.jpg'
+import {initFrom} from '../../api/login'
+import {initFromToken} from '../../redux/actions/Counter_Action'
 
-export default connect((state) => ({ code: state.code }), {})(
+
+export default connect((state) => ({ login: state.login}), {
+    initFromToken:initFromToken
+})(
   class LoginContainer extends Component {
-
     LoginRef = React.createRef()
     LoginContentTab = React.createRef()
     PhoneLoginRrf = React.createRef();
     UserNameRef = React.createRef()
 
+    //获取表单的值
+    TokenRef = React.createRef()
+    LoginNameRef = React.createRef()
+    PasswordRef = React.createRef()
+
+
     componentDidMount () {
        this.LoginRef.current.childNodes[0].style.color = "#F56600"
        this.PhoneLoginRrf.current.style.zIndex = "1"
        this.UserNameRef.current.style.zIndex = "0"
+       this.initFromAccess()
+    }
+
+
+    loginClickHandler =async () =>{
+        let token =  this.TokenRef.current.value
+        let name = this.LoginNameRef.current.value
+        let password = this.PasswordRef.current.value
+        
+
+    }
+
+
+
+    initFromAccess = async ()=>{
+        let result = await initFrom()
+        this.props.initFromToken(result.data)
     }
     loginSwitch =(event)=>{
       let eventChilds =  event.currentTarget.childNodes
@@ -29,7 +56,6 @@ export default connect((state) => ({ code: state.code }), {})(
         eventChilds[i].style.color = ''
         loginContentTabChildNodes[i].style.zIndex = 0
       }
-
       if(event.target.className === 'li'){
          event.target.style.color = "#F56600"
          loginContentTabChildNodes[event.target.id].style.zIndex = 1
@@ -53,20 +79,19 @@ export default connect((state) => ({ code: state.code }), {})(
          }
        }
     }
-
     phoneLogin=()=>{
       this.UserNameRef.current.style.zIndex = "1"
       this.PhoneLoginRrf.current.style.zIndex = "0"
     }
     userNameLogin=()=>{
-
          this.UserNameRef.current.style.zIndex = "0"
          this.PhoneLoginRrf.current.style.zIndex = "1"
-      console.log(this.UserNameRef.current,this.PhoneLoginRrf.current)
     }
 
-
     render () {
+
+      let token = this.props.login.token
+
       return (
         <Fragment>
           <div id="loginWrap">
@@ -83,6 +108,7 @@ export default connect((state) => ({ code: state.code }), {})(
             </div>
             <div className="login-content">
               <div className="login-content-tab" ref = {this.LoginContentTab}>
+
                 <div className="login-switch-bar">
                   <ul ref = {this.LoginRef} onClick={this.loginSwitch}>
                     <li className = "li" id = "0">账号登录</li>
@@ -90,6 +116,7 @@ export default connect((state) => ({ code: state.code }), {})(
                     <li className = "li" id = "1">扫码登录</li>
                   </ul>
                 </div>
+
                 <div className="login-switch-bar-content">
                        <div className="login-switch-bar-content-ma">
                          <img src={ERWEIMA} alt=""/>
@@ -99,10 +126,15 @@ export default connect((state) => ({ code: state.code }), {})(
                          <p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
                        </div>
                 </div>
+
                 <div  className="login-switch-bar-content" ref = {this.PhoneLoginRrf}>
-                  <input type="text" placeholder="邮箱/手机号码/小米ID"/>
-                  <input type="text" placeholder="请输入密码"/>
-                  <input type="button" value="登录"/>
+
+                  <input ref = {this.LoginNameRef} type="username" placeholder="邮箱/手机号码/小米ID"/>
+                  <input ref = {this.PasswordRef}type="password" placeholder="请输入密码"/>
+                  <input onClick = {this.loginClickHandler} type="button" value="登录"/>
+                    <input ref = {this.TokenRef} type="hidden" value={token}/>
+
+
                   <div className="login-way">
                     <p  onClick={this.phoneLogin}><Link to="#"/>手机短信登录注册</p>
                     <span><Link to="#"/>立即注册</span>
@@ -119,6 +151,7 @@ export default connect((state) => ({ code: state.code }), {})(
                   </div>
                 </div>
                 <div  className="login-switch-bar-content" ref = {this.UserNameRef} >
+
                   <div><span>+86</span><input type="text" placeholder="请输入手机号码"/></div>
                  <div> <input type="text" placeholder="请输入验证码"/><span>获取验证码</span></div>
                   <div><input type="button" value="立即登录/注册"/></div>

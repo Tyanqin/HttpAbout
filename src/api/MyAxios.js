@@ -1,6 +1,6 @@
 import axios from 'axios'
 import qs from 'querystring'
-import {message} from 'antd'
+// import {message} from 'antd'
 import Nprgresss from 'nprogress'
 import 'nprogress/nprogress.css'
 
@@ -27,7 +27,7 @@ instance.interceptors.response.use(
   return respons.data;
 }, (error => {
    Nprgresss.done()
-    message.error(error.message,2);
+    // message.error(error.message,2);
     return new Promise(()=>{})
   })
   )

@@ -3,7 +3,6 @@ import {add,sub,eventAdd} from '../redux/actions/Counter_Action'
 import {connect} from 'react-redux'
 import {reqLogin} from '../api/login'
 
-
 export default connect((state)=>({
   count: state.counter,
   home:state.home
@@ -34,7 +33,9 @@ export default connect((state)=>({
         this.props.eventAdd(value)
       }
     }
-    asyncHandelOnClick =()=>{}
+    asyncHandelOnClick =()=>{
+
+    }
 
     render () {
       let result =  this.props.count
